@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#0a1a1f] text-white scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diaa | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .glow-text {
+      text-shadow: 0 0 5px #67e8f9, 0 0 10px #0ff2ff, 0 0 15px #0ff2ff77;
+    }
+
+    .nav-shadow {
+      box-shadow: 0 0 30px #0ff2ff33;
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden relative">
+
+  <!-- Background Effects -->
+  <div class="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
+    <div class="w-[500px] h-[500px] bg-cyan-400 opacity-20 blur-3xl rounded-full absolute top-0 left-0 animate-pulse"></div>
+    <div class="w-[400px] h-[400px] bg-blue-500 opacity-10 blur-2xl rounded-full absolute bottom-10 right-10 animate-pulse"></div>
+  </div>
+
+  <!-- Header -->
+  <nav id="navbar" class="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-7xl px-6 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-full shadow-lg transition-all duration-300 dark:bg-[#0d1e24]/70 dark:border-[#1e3a47]">
+  <div class="flex justify-between items-center">
+    <!-- Logo -->
+    <div class="text-3xl font-bold tracking-wider text-[#d9faff]">Diaa</div>
+
+    <!-- Navigation Links -->
+    <ul class="hidden md:flex gap-8 text-lg font-semibold text-[#c0d9e8]">
+      <li><a href="#" class="hover:text-[#67e8f9] transition duration-300">Home</a></li>
+      <li><a href="#about" class="hover:text-[#67e8f9] transition duration-300">About</a></li>
+      <li><a href="#contact" class="hover:text-[#67e8f9] transition duration-300">Contact</a></li>
+    </ul>
+
+    <!-- Right Section -->
+    <div class="flex items-center gap-4">
+      <!-- Theme Toggle Icon -->
+      <button class="text-white hover:text-yellow-300 transition">
+        <!-- Icon SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2m0 16v2m10-10h-2M4 12H2m16.95 4.95l-1.414-1.414M6.464 6.464 5.05 5.05m14.142 0-1.414 1.414M6.464 17.536l-1.414 1.414"/>
+        </svg>
+      </button>
+
+      <!-- Language Switch Button -->
+      <button class="border border-blue-400 rounded-full px-4 py-1 text-sm text-blue-300 hover:bg-blue-600/20 transition">Ar</button>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero -->
+  <section class="flex flex-col md:flex-row items-center justify-between px-10 md:px-32 pt-40 pb-24 relative z-10">
+    <div class="text-left max-w-xl animate-fade-in-up" data-aos="fade-up">
+      <h2 class="text-2xl mb-3 text-[#e0f2f1] tracking-wide">Hello, My Name Is</h2>
+      <h1 class="text-6xl font-bold text-blue-300 glow-text">Diaa</h1>
+      <p class="text-xl mt-4 text-gray-300 tracking-wide">Game Developer • Programmer • Cyber Security Enthusiast</p>
+    </div>
+    <div class="mt-10 md:mt-0" data-aos="zoom-in">
+      <img src="./avatar.png" alt="Avatar" class="w-[250px] md:w-[300px]" />
+    </div>
+  </section>
+
+  <section id="about" class="px-6 md:px-24 py-24 space-y-32 text-white">
+<!-- Game Development -->
+<div data-aos="fade-right" data-aos-duration="1000" class="transition duration-500 hover:scale-[1.01] hover:shadow-lg rounded-2xl p-8 bg-[#111827]/70 backdrop-blur-lg border border-cyan-500/20">
+  <h2 class="text-4xl font-bold text-cyan-300 tracking-wide mb-6 border-b border-cyan-500/30 pb-2">Game Development</h2>
+  
+  <div class="space-y-6 text-gray-300">
+    <div>
+      <h3 class="text-2xl font-semibold text-cyan-200 mb-2">Overview</h3>
+      <p class="leading-relaxed">
+        Game development is where my love for storytelling, programming, and design come together. I don’t just build games—I create atmospheres that leave an impression. I’m currently focused on building emotional, immersive experiences that stick in the player’s mind long after the screen fades.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold text-cyan-200 mb-2">Skills</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Unity (C#), Godot (GDScript/C++)</li>
+        <li>Game mechanics programming and system design</li>
+        <li>Pixel art and 2D/3D environment creation</li>
+        <li>Sound design, story writing, and narrative structure</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold text-cyan-200 mb-2">Projects</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Dim Light</strong> — Atmospheric mystery puzzle game (in development)</li>
+        <li><strong>Moresnet</strong> — Collaborative game to avoid destruction (in development). This game won a competition and is one of my most memorable projects.</li>
+        <li><a href="https://drive.google.com/file/d/1jPQ64PNFhINmBfDrPUEJDUl1H1AEt6zC/view?usp=drive_link" target="_blank" class="text-cyan-400 underline">Watch Dim Light Trailer</a></li>
+        <li><a href="https://makeacrowd.com" target="_blank" class="text-cyan-400 underline">Visit Make a Crowd</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold text-cyan-200 mb-2">Achievements</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Winner of Moresnet Game Contest</li>
+        <li>5th place in Miss Al-Ward National Game Development Competition – Jordan</li>
+        <li>3rd place in Afro-Asian Youth Forum Game Development Track – Arab Region</li>
+        <li>Preparing to represent the region in the upcoming <em>Global Game Challenge</em></li>
+        <li>
+          <a href="https://www.facebook.com/photo/?fbid=991924886425354&set=pcb.991925589758617" target="_blank" class="text-cyan-400 underline">Afro-Asian Forum Post</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/share/v/1C3g7MVsDq/" target="_blank" class="text-cyan-400 underline">Miss Al-Ward Competition Video</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Artificial Intelligence -->
+<div data-aos="fade-left" data-aos-duration="1000" class="transition duration-500 hover:scale-[1.01] hover:shadow-lg rounded-2xl p-8 bg-[#1e1b2e]/70 backdrop-blur-lg border border-purple-500/20">
+  <h2 class="text-4xl font-bold text-purple-300 tracking-wide mb-6 border-b border-purple-500/30 pb-2">Artificial Intelligence</h2>
+  
+  <div class="space-y-6 text-gray-300">
+    <div>
+      <h3 class="text-2xl font-semibold text-purple-200 mb-2">Overview</h3>
+      <p class="leading-relaxed">
+        My journey with AI started from deep curiosity about how machines think and adapt. It became one of my strongest skills and passions. I use artificial intelligence to solve real-world problems—especially in education and game development—by building tools that simplify learning and enhance user interaction.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold text-purple-200 mb-2">Skills</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Python for AI development</li>
+        <li>Web-based AI systems (AI web integration)</li>
+        <li>Building smart systems that analyze, respond, and improve over time</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold text-purple-200 mb-2">Achievements</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Created an AI-powered educational assistant website to help students learn and practice interactively</li>
+        <li>Participated in <span class="text-purple-400">GJU 3030 Schools</span> AI Competition with an innovative learning platform</li>
+        <li>Integrated AI logic into personal game projects to make smarter in-game systems</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold text-purple-200 mb-2">Demo</h3>
+      <p class="leading-relaxed">
+        Watch a walkthrough of the AI-powered educational platform I developed:
+        <a href="https://youtu.be/yV4an_aC5bo?si=IyO5XMGnQKhevF6B" target="_blank" class="text-purple-400 underline hover:text-purple-300">YouTube Demo</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Cyber Security -->
+<div data-aos="fade-right" data-aos-duration="1000" class="transition duration-500 hover:scale-[1.01] hover:shadow-lg rounded-2xl p-8 bg-[#1a141e]/70 backdrop-blur-lg border border-red-500/20">
+  <h2 class="text-4xl font-bold text-red-300 tracking-wide mb-6 border-b border-red-500/30 pb-2">Cyber Security</h2>
+
+  <div class="space-y-6 text-gray-300">
+    <div>
+      <h3 class="text-2xl font-semibold text-red-200 mb-2">Overview</h3>
+      <p class="leading-relaxed">
+        Cybersecurity has become a personal challenge and passion. It’s not just about protecting systems—it's about outsmarting real-world threats and understanding how attackers think. I dive into every vulnerability with curiosity and persistence, knowing that each exploit I prevent could be one that saves someone’s data or system.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold text-red-200 mb-2">Skills</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Web hacking and penetration testing</li>
+        <li>Privilege escalation techniques (Linux/Windows)</li>
+        <li>OSINT and digital forensics</li>
+        <li>Cryptography and CTF competitions</li>
+        <li>Linux environments and scripting</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-2xl font-semibold text-red-200 mb-2">Achievements</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Finalist for two consecutive years at <span class="text-red-400">NCSC Cybersecurity Championship</span> – Ranked 9th then 6th nationally</li>
+        <li>Completed over 35 labs on TryHackMe</li>
+      </ul>
+      <p class="mt-2 text-sm text-red-400">
+        <a href="https://www.facebook.com/reel/1749843849273420" target="_blank" class="underline hover:text-red-300">See competition highlight here</a>
+      </p>
+    </div>
+  </div>
+</div>
+  </section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="px-10 md:px-32 py-24 relative z-10">
+  <div class="max-w-3xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold text-[#d9faff] glow-text mb-4">Contact Me</h2>
+    <p class="text-gray-300">
+      Got a project in mind, a question, or just want to say hi? I’d love to hear from you.
+    </p>
+  </div>
+
+  <form class="max-w-3xl mx-auto bg-[#0d1e24] bg-opacity-60 p-8 rounded-2xl border border-[#1e3a47] shadow-lg space-y-6">
+    <div class="flex flex-col md:flex-row gap-6">
+      <input type="text" placeholder="Your Name" class="flex-1 p-3 rounded-md bg-[#0a1a1f] border border-[#1e3a47] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition" required>
+      <input type="email" placeholder="Your Email" class="flex-1 p-3 rounded-md bg-[#0a1a1f] border border-[#1e3a47] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition" required>
+    </div>
+    <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-md bg-[#0a1a1f] border border-[#1e3a47] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition" required></textarea>
+    <button type="submit" class="bg-cyan-500 hover:bg-cyan-400 text-[#0a1a1f] font-semibold px-6 py-3 rounded-full transition w-fit mx-auto block">
+      Send Message
+    </button>
+  </form>
+
+  <!-- Quick Links (optional) -->
+  <div class="text-center mt-10 text-gray-400">
+    <p class="mb-2">Or reach me at:</p>
+    <div class="flex justify-center gap-6 text-lg">
+      <a href="mailto:bravelgiht02@email.com" class="hover:text-cyan-400 transition">📧 bravelight02@email.com</a>
+      <a href="https://github.com/hiThere02" target="_blank" class="hover:text-cyan-400 transition">💻 GitHub</a>
+      <a href="https://www.youtube.com/channel/UCjdDshxMXu250ozCZENoeaQ" target="_blank" class="hover:text-cyan-400 transition">🔗 YouTube</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="mt-64 bg-[#0d1e24] bg-opacity-60 border-t border-[#1e3a47] py-8 px-10 md:px-32 text-center text-gray-400">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-6xl mx-auto">
+      <div class="text-2xl font-bold text-[#67e8f9] glow-text">Diaa</div>
+      <ul class="flex gap-6 text-sm">
+        <li><a href="#" class="hover:text-cyan-400 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
+        <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
+      </ul>
+      <div class="text-sm">© <span id="year"></span> Diaa. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('bg-opacity-90', 'backdrop-blur-lg', 'shadow-lg', 'scale-[0.98]');
+      } else {
+        navbar.classList.remove('bg-opacity-90', 'backdrop-blur-lg', 'shadow-lg', 'scale-[0.98]');
+      }
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
